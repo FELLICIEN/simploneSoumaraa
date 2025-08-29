@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-egg-fried me-2"></i>SOUMARA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a_propos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Notre Menu</h2>
+            <p class="text-center mb-5">Découvrez nos délicieuses spécialités préparées avec des ingrédients frais et de
+                saison.</p>
+
+            <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="entrees-tab" data-bs-toggle="pill" data-bs-target="#entrees"
+                        type="button" role="tab" aria-controls="entrees" aria-selected="true">Entrées</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="plats-tab" data-bs-toggle="pill" data-bs-target="#plats" type="button"
+                        role="tab" aria-controls="plats" aria-selected="false">Plats Principaux</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts"
+                        type="button" role="tab" aria-controls="desserts" aria-selected="false">Desserts</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="menuTabsContent">
+                <!-- Entrées -->
+                <div class="tab-pane fade show active" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="img4.jpg" class="card-img-top" alt="Tartare de saumon">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tartare de saumon</h5>
+                                    <p class="card-text">Saumon frais mariné au citron et à l'aneth, servi avec toasts
+                                    </p>
+                                    <p class="price"> 2000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="img2.jpg" class="card-img-top" alt="Salade méditerranéenne">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salade méditerranéenne</h5>
+                                    <p class="card-text">Mélange de jeunes pousses, feta, olives et vinaigrette au
+                                        basilic</p>
+                                    <p class="price">3000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="img3.jpg" class="card-img-top" alt="Soupe de poisson">
+                                <div class="card-body">
+                                    <h5 class="card-title">Soupe de poisson</h5>
+                                    <p class="card-text">Soupe traditionnelle de poissons de roche, rouille et croûtons
+                                    </p>
+                                    <p class="price">1500 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plats Principaux -->
+                <div class="tab-pane fade" id="plats" role="tabpanel" aria-labelledby="plats-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top" alt="Filet de boeuf">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filet de bœuf</h5>
+                                    <p class="card-text">Filet de bœuf grillé, sauce au poivre vert, gratin dauphinois
+                                    </p>
+                                    <p class="price">4000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="https://images.unsplash.com/photo-1599921841143-819065a55cc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                    class="card-img-top" alt="Bar en croûte de sel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bar en croûte de sel</h5>
+                                    <p class="card-text">Bar de ligne cuit en croûte de sel, légumes de saison</p>
+                                    <p class="price">3000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top" alt="Risotto aux champignons">
+                                <div class="card-body">
+                                    <h5 class="card-title">Risotto aux champignons</h5>
+                                    <p class="card-text">Risotto crémeux aux cèpes et truffe, parmesan</p>
+                                    <p class="price">2000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    class="card-img-top" alt="Fondant au chocolat">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fondant au chocolat</h5>
+                                    <p class="card-text">Fondant chocolat noir, cœur coulant, glace vanille</p>
+                                    <p class="price">1000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="img5.jpg" class="card-img-top" alt="Tarte citron meringuée">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tarte citron meringuée</h5>
+                                    <p class="card-text">Tarte au citron jaune, meringue italienne</p>
+                                    <p class="price">750 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card menu-card h-100">
+                                <img src="https://images.unsplash.com/photo-1623334044303-241021148842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    class="card-img-top" alt="Assiette de fromages">
+                                <div class="card-body">
+                                    <h5 class="card-title">Assiette de fromages</h5>
+                                    <p class="card-text">Sélection de fromages affinés, confiture de figues</p>
+                                    <p class="price">6000 FCFA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="text-white mb-4">Restaurant Soumara</h3>
+                    <p>Une expérience gastronomique unique alliant tradition et innovation.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="bi bi-star-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-4">Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="accueil.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li><a href="a_propos.html" class="text-white text-decoration-none">À propos</a></li>
+                        <li><a href="menu.html" class="text-white text-decoration-none">Menu</a></li>
+                        <li><a href="galerie.html" class="text-white text-decoration-none">Galerie</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos actualités et offres spéciales.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email">
+                            <button class="btn btn-primary" type="submit">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Restaurant Soumara. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none">Mentions légales</a> |
+                        <a href="#" class="text-white text-decoration-none">Politique de confidentialité</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
